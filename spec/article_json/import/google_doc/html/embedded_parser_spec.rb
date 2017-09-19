@@ -28,7 +28,7 @@ describe ArticleJSON::Import::GoogleDoc::HTML::EmbeddedParser do
         <<-html
           <p>
             <span>
-              <a href="foo">foo</a><span>&nbsp;[foo bar]</span>
+              <a href="foo">foo</a><span> [foo bar]</span>
             </span>
           </p>
         html

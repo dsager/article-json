@@ -2,6 +2,12 @@ describe ArticleJSON::Import::GoogleDoc::HTML::Parser do
   subject(:parser) { described_class.new(html) }
   let(:html) { '' }
 
+  describe '#clean_whitespaces' do
+    subject { described_class.allocate.clean_whitespaces(html) }
+    let(:html) { "  \t foo  \n&nbsp; bar    " }
+    it { should eq ' foo bar ' }
+  end
+
   context 'reference document test' do
     let(:html) { File.read('spec/fixtures/reference_document.html') }
     let(:json) { File.read('spec/fixtures/reference_document_parsed.json') }

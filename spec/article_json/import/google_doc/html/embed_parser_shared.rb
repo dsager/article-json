@@ -13,7 +13,7 @@ shared_context 'for an embed parser' do
       <p>
         <span>
           <a href="#{url}">#{url}</a>
-          <span>&nbsp;[#{expected_tags.join(' ')}]</span>
+          <span> [#{expected_tags.join(' ')}]</span>
         </span>
       </p>
     html

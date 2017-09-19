@@ -5,11 +5,18 @@ module ArticleJSON
         class Parser
           # @param [String] html
           def initialize(html)
-            doc = Nokogiri::HTML(html)
+            doc = Nokogiri::HTML(clean_whitespaces(html))
             @body_enumerator = doc.xpath('//body').last.children.to_enum
 
             css_node = doc.xpath('//head/style').last
             @css_analyzer = CSSAnalyzer.new(css_node&.inner_text)
+          end
+
+          # Replace (repeated) different kinds of whitespace with a simple one
+          # @param [String] html
+          # @return [String]
+          def clean_whitespaces(html)
+            html.gsub(/(\s|\u00A0|&nbsp;)+/, ' ')
           end
 
           # Parse the body of the document and return the result

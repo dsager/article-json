@@ -31,7 +31,7 @@ module ArticleJSON
           # Extract any potential tags, specified in brackets after the URL
           # @return [Array[Symbol]]
           def tags
-            match = /(.*?)[\s\u00A0]+\[(?<tags>.*)\]/.match(@node.inner_text)
+            match = /(.*?)[\s]+\[(?<tags>.*)\]/.match(@node.inner_text)
             (match ? match[:tags] : '').split(' ')
           end
 

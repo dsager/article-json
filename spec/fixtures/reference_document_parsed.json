@@ -64,7 +64,7 @@
       },
       {
         "type": "text",
-        "content": " and ",
+        "content": " and ",
         "bold": false,
         "italic": false,
         "href": null
@@ -78,7 +78,7 @@
       },
       {
         "type": "text",
-        "content": " text.",
+        "content": " text.",
         "bold": false,
         "italic": false,
         "href": null
@@ -168,7 +168,7 @@
           },
           {
             "type": "text",
-            "content": " entries",
+            "content": " entries",
             "bold": false,
             "italic": false,
             "href": null
@@ -207,13 +207,6 @@
             "type": "text",
             "content": "three",
             "bold": true,
-            "italic": false,
-            "href": null
-          },
-          {
-            "type": "text",
-            "content": " ",
-            "bold": false,
             "italic": false,
             "href": null
           },
@@ -398,7 +391,7 @@
     "content": [
       {
         "type": "text",
-        "content": "Videos are just referenced by the URL. It doesn’t matter if the URL is a hyperlink or just normal text. The important thing is that it has its own paragraph with nothing else in it. The alignment (centered  in this example) doesn’t really matter.",
+        "content": "Videos are just referenced by the URL. It doesn’t matter if the URL is a hyperlink or just normal text. The important thing is that it has its own paragraph with nothing else in it. The alignment (centered in this example) doesn’t really matter.",
         "bold": false,
         "italic": false,
         "href": null
